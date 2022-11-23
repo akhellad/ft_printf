@@ -16,14 +16,13 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-void				d_case(int entier, int *k);
-void				ft_putchar(char c);
-int					ft_printf(const char *str, ...);
-unsigned long long	ft_convertbase(unsigned long long nbr, \
-									unsigned long long base, int *k);
-unsigned long long	ft_convertbase2(unsigned long long nbr, \
-									unsigned long long base);
-void				ft_putchar(char c);
-void				ft_putstr(char *s);
+void	d_case(int entier, int *k);
+void	ft_putchar(char c, int *k);
+int		ft_printf(const char *str, ...);
+void	ft_putstr(char *s, int *k);
+void	ft_putnbr_base(unsigned long long nbr, \
+				unsigned long long base, int *k);
+void	ft_putnbr_base2(unsigned long long nbr, \
+				unsigned long long base, int *k);
 
 #endif

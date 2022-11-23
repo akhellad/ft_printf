@@ -13,10 +13,18 @@
 
 void	d_case(int entier, int *k)
 {
-	if (entier < 0)
+	if (entier == -2147483648)
 	{
-		ft_putchar('-');
-		entier *= -1;
+		ft_putstr("-2147483648", k);
 	}
-	ft_convertbase((unsigned long long)entier, 10, k);
+	else if (entier < 0)
+	{
+		ft_putchar('-', k);
+		entier *= -1;
+		ft_putnbr_base((unsigned long long)entier, 10, k);
+	}
+	else if (entier == 0)
+		ft_putchar('0', k);
+	else
+		ft_putnbr_base((unsigned long long)entier, 10, k);
 }

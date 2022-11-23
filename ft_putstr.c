@@ -11,14 +11,19 @@
 /* ************************************************************************** */
 #include "ft_printf.h"
 
-void	ft_putstr(char *s)
+void	ft_putstr(char *s, int *k)
 {
 	int	i;
 
 	i = 0;
+	if (!s)
+	{
+		ft_putstr("(null)", k);
+		return ;
+	}
 	while (s[i])
 	{
-		ft_putchar(s[i]);
+		ft_putchar(s[i], k);
 		i ++;
 	}
 }

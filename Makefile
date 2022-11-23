@@ -1,4 +1,4 @@
-SRCS = ft_printf.c d_case.c ft_convertbase.c ft_convertbase2.c ft_putchar.c ft_putstr.c 
+SRCS = ft_printf.c d_case.c ft_putnbr_base.c  ft_putnbr_base2.c ft_putchar.c ft_putstr.c 
 OBJS = ${SRCS:.c=.o}
 BONUS_OBJS	= $(BONUS:.c=.o)
 NAME = libftprintf.a
@@ -10,7 +10,7 @@ ARRC = ar rc
 
 all: ${NAME}
 
-%.c:%.o
+%.o:%.c 
 	${CC} ${CFLAGS} -c $< -o $@
 
 ${NAME}: ${OBJS}
