@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akhellad <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: akhellad <akhellad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 15:20:03 by akhellad          #+#    #+#             */
-/*   Updated: 2022/11/21 15:20:05 by akhellad         ###   ########lyon.fr   */
+/*   Updated: 2024/02/05 11:53:33 by akhellad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "ft_printf.h"
 
 void	ft_putchar(char c, int *k)
